@@ -30,7 +30,6 @@ def test_buy_product_1():
     chp = Checkout_page(driver)
     chp.checkout_order()
 
-    time.sleep(2)
 
 
 

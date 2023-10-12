@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -63,5 +65,7 @@ class Checkout_page(Cart_page):
         self.input_user_phone_number()
         self.click_delete_first_product_from_cart()
         self.click_delete_second_product_from_cart()
+
+        time.sleep(2)
 
 
